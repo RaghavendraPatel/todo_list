@@ -1,0 +1,206 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(216, 216, 216);
+}
+h1{
+    margin-top: 2rem;
+    text-align: center;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+.add-item{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 40vw;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    /* text-align: center; */
+    position: absolute;
+    z-index: 4;
+    display: none;
+}
+.add-item h2{
+   margin-bottom: 1.5rem;
+   text-align: center;
+}
+.add-item input,select{
+    margin-bottom: .8rem;
+}
+input{
+    width: 95%;
+    border: none;
+    height: 2rem;
+    padding-left: 1rem;
+    border-bottom: 2px solid black;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+select:focus, input:focus{
+   outline: none;
+}
+
+label{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+select{
+    width: 95%;
+    border: none;
+    height: 2rem;
+    padding-left: 1rem;
+    border-bottom: 2px solid black;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.add-item .add-btn{
+    margin-left: 50%;
+    margin-top: 1rem;
+    transform: translate(-50%);
+}
+.add-btn{
+    border: 2px solid black;
+    padding: .5rem;
+    background-color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.add-btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.cancel-btn{
+    position: absolute;
+    left: 36vw;
+    font-size: 1.8rem;
+    border: none;
+    background-color: transparent;
+}
+.cancel-btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.container-outer{
+    margin: 0 auto;
+    margin-top: 10vh;
+    width: 70vw;
+    height: 80vh;
+    background-color: white;
+    border: 2px solid black;
+    border-radius:1rem;
+    padding: 2rem;
+    overflow: none;
+}
+
+.empty{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.empty > *{
+    margin-bottom: 1rem ;
+}
+
+.container-inner{
+    width: 90%;
+    overflow: scroll;
+    height: 60vh;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding-top: 2rem;
+}
+.task-container{
+    border: 1px solid black;
+    text-align: left;
+    padding: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 90%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+.task-container input{
+    width:1.5rem;
+    color: black;
+}
+
+.footer-btn{
+    position: absolute;
+    bottom: 15vh;
+    left: 50%;
+    transform: translate(-50%);
+}
+.footer-btn .add-btn{
+    margin-left: 1rem;
+}
+
+.end{
+    position: absolute;
+    display: flex;
+    right: 1rem;
+    align-items: center;
+}
+.end>*{
+    margin-left: 2rem ;
+}
+.start{
+    display: flex;
+    align-items: center;
+}
+.start>*{
+    margin-right: 1rem;
+}
+
+.task-detail{
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.task-name{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.checked{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-status{
+    font-size: .8rem;
+    color: gray;
+}
+
+.end button{
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    transform: scale(-1, 1);
+    color: grey;
+}
+
+.end button:hover{
+    transform: scale(-1,1.1);
+    cursor: pointer;
+    color: black;
+}
